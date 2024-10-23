@@ -17,7 +17,7 @@ def decrypt_lf3(path):
 
         # decrypt the data
         decrypter = cipher.decryptor()
-        decrypted = decrypter.update(encrypted) + decryptor.finalize()
+        decrypted = decrypter.update(encrypted) + decrypter.finalize()
 
     # return the data
     return decrypted
